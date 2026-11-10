@@ -1,0 +1,17 @@
+{
+  "framework": "nextjs",
+  "crons": [
+    {
+      "path": "/api/cron/health",
+      "schedule": "*/5 * * * *"
+    },
+    {
+      "path": "/api/cron/daily",
+      "schedule": "0 3 * * *"
+    },
+    {
+      "path": "/api/cron/weekly",
+      "schedule": "0 3 * * 1"
+    }
+  ]
+}
